@@ -1,0 +1,29 @@
+// ABMOfficeSystemcpp.idl : type library source for ABM-Office-System-cpp.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (ABMOfficeSystemcpp.tlb).
+
+[ uuid(179B16C2-FA1B-4339-A570-F3B6C09AC202), version(1.0) ]
+library ABMOfficeSystemcpp
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CABMOfficeSystemcppDoc
+	
+	[ uuid(3841498A-F991-4ED3-B623-720545A96686) ]
+	dispinterface IABMOfficeSystemcpp
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CABMOfficeSystemcppDoc
+	
+	[ uuid(2F8906F8-BDF5-485C-AC46-246749E89391) ]
+	coclass CABMOfficeSystemcppDoc
+	{
+		[default] dispinterface IABMOfficeSystemcpp;
+	};
+};
